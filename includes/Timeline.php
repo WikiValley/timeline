@@ -332,7 +332,6 @@ class Timeline {
 					'wikiId' => WikiMap::getCurrentWikiId(),
 					'lockManager' => new NullLockManager( [] ),
 					'containerPaths' => [ 'timeline-render' => "{$wgUploadDirectory}/timeline" ],
-					'fileMode' => 0777,
 					'obResetFunc' => 'wfResetOutputBuffers',
 					'streamMimeFunc' => [ 'StreamFile', 'contentTypeFromPath' ],
 					'logger' => LoggerFactory::getInstance( 'timeline' ),
